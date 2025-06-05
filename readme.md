@@ -3,8 +3,10 @@
 A modern, minimal, and responsive quiz application built using **HTML**, **CSS**, and **JavaScript**.
 
 ## 📸 Preview
-
-![Quiz App Screenshot](screenshot.png)
+### Desktop View
+![Desktop View](/images/desktop.png)
+### Mobile View
+![Desktop View](/images/mobile.png)
 
 ## 🚀 Features
 
