@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --bg: #0d1b2a;
+  --app-bg-color: #1b263b;
+  --heading-color: #e0e1dd;
+  --question-color: #a9b7c6;
+  --btn-bg-color: #3a86ff;
+}
+
+.app {
+  background-color: var(--app-bg-color);
+  width: 80%;
+  max-width: 30rem;
+  margin: 5rem auto 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:600px) {
+  .app{
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.app h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px dotted rgb(117, 113, 113);
+  color: var(--heading-color);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.quiz {
+  padding: 1rem 0;
+}
+
+.quiz h2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--question-color);
+}
+
+.btn {
+  background-color: #2a2f4a; /* Deep navy blue */
+  color: #e5e5e5; /* Light gray for modern feel */
+  border: 1px solid #3c445c;
+  width: 100%;
+  color: #e0e0e0;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  border-radius: 0.4rem;
+  text-transform: capitalize;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover:not([disabled]) {
+  background-color: #353b59;
+  transform: scale(1.02);
+  color: #5a607c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background-color: #3c445c;
+  color: #e5e5e5;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem auto 0;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: none;
+}
+
+#next-btn:hover {
+  background-color: #4f5770;
+  transform: scale(1.02);
+}
+
+.correct {
+  background-color: #2e7d32;
+  color: #e0f7e9;
+  border: 1px solid #43a047;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.inCorrect {
+  background-color: #b71c1c;
+  color: #ffeaea;
+  border: 1px solid #d32f2f;
+  box-shadow: 0 0 10px rgba(244, 67, 54, 0.5); 
+}
+
+.correct,
+.inCorrect {
+  transition: all;
+}
+
+.correct:hover,
+.inCorrect:hover {
+  opacity: 0.95;
+}
